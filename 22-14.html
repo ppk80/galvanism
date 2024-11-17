@@ -47,14 +47,17 @@
             line-height: 1.6;
         }
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            background: var(--heading-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: lowercase; /* Title in lowercase */
-        }
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background-image: var(--heading-gradient); /* Using background-image to define gradient */
+    background-clip: text; /* Applies background to text only */
+    -webkit-background-clip: text; /* For webkit-based browsers */
+    -webkit-text-fill-color: transparent; /* Ensures text is transparent, allowing the gradient to show */
+    text-transform: lowercase; /* Title in lowercase */
+    display: inline; /* Ensure it works on inline level */
+}
+
 
         .poem {
             font-size: 1.1em;
