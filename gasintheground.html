@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gas in the ground</title>
+    <style>
+
+        /* Import Noto Sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+        /* Basic reset for margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Root colors for the earthy, stormy variation */
+        :root {
+            --bg-color: #2f3e46; /* Deep earthy tones with a touch of green for nature */
+            --text-color: #e1f2d4; /* Pale green for calm readability */
+            --link-color: #87d0a0; /* Soft moss green for interactive elements */
+            --link-hover-color: #f2b1b3; /* Light coral for hover effects */
+            --heading-gradient: linear-gradient(to right, #2a774d, #c1dfcc, #2a4d2a); /* Forest green to pale mint to dark moss gradient */
+            --tooltip-bg: #4b5d4c; /* Slate gray-green for tooltip */
+            --tooltip-text: #f1f8e5; /* Light greenish color for tooltip text */
+            --tooltip-hover-bg: rgba(127, 208, 160, 0.4); /* Moss green hover effect */
+        }
+
+        /* Styling for the page background and font */
+        body {
+            font-family: "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Center align the container and text */
+        .poetry-container {
+            max-width: 600px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: var(--heading-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: lowercase; /* Title in lowercase */
+        }
+
+        .poem {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        /* Styling for individual stanzas */
+        .stanza {
+            margin: 1.5em 0;
+        }
+
+        /* Tooltip container */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            background: var(--tooltip-hover-bg);
+            background-size: 200% 100%;
+            background-position: 100% 0;
+            transition: background-position 0.3s ease; /* Smooth transition */
+            color: inherit; /* Ensure text color matches context */
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden; /* Hidden by default */
+            width: 150px; /* Set a width for the tooltip */
+            background-color: var(--tooltip-bg); /* Tooltip background */
+            color: var(--tooltip-text); /* Tooltip text */
+            text-align: center;
+            padding: 5px 0; /* Padding inside the tooltip */
+            border-radius: 6px; /* Rounded corners */
+
+            /* Positioning the tooltip */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position above the tooltip container */
+            left: 50%; /* Center the tooltip */
+            margin-left: -75px; /* Adjust left margin to center */
+
+            /* Fade-in effect */
+            opacity: 0; 
+            transition: opacity 0.3s;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible; /* Show on hover */
+            opacity: 1; /* Fade in effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="poetry-container">
+        <h1>gas in the ground</h1>
+        <div class="poem">
+            <p class="stanza">
+                I’ve trapped the spores in my lungs <br>
+                when I knocked on the ground <br>
+                and felt lightning I’ve asked <br>
+                if the wound on my back <br>
+                traced a disconformity <br>
+            </p>
+            <p class="stanza">
+                as if the field long ago <br>
+                were reversed, but, still bitten <br>
+                by the soil, I pose <br>
+                the question: if an animal <br>
+                not captive had been <br>
+                observed for ten days. <br>
+            </p>
+            <p class="stanza">
+                Lying in bed, I wait <br>
+                for the symptoms. Watching <br>
+                malachite bleed <br>
+                sap on the third day. <br>
+                One storm passes <br>
+                then three return. <br>
+            </p>
+            <p class="stanza">
+                Face down, my nose closest <br>
+                to the ground: the single stalk carrying <br>
+                my weight, or rather, <br>
+                the subterranean caverns <br>
+                suspended like bats from my parenchyma: <br>
+                glands that store thunder <br>
+                in circuitous echoes crashing <br>
+                in milky waves <br>
+                painting the tips of my toenails. <br>
+            </p>
+            <p class="stanza">
+                There is no fever, but there is <br>
+                an imagined one. The one I thought <br>
+                the earth asked of me — <br>
+                the wound on my back <br>
+                for a body to feed on. <br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

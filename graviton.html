@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>graviton</title>
+    <style>
+
+        /* Import Noto Sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+        /* Basic reset for margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Root colors for the quantum and ethereal variation */
+        :root {
+            --bg-color: #181a23; /* Deep space black */
+            --text-color: #e3e8f5; /* Light, ethereal off-white for readability */
+            --link-color: #7f98b0; /* Subtle blue-gray for interactive elements */
+            --link-hover-color: #e2c1ff; /* Soft lavender for hover effects */
+            --heading-gradient: linear-gradient(to right, #7f98b0, #b9f1ff, #bd81ff); /* Dusty blue to light lavender to violet gradient */
+            --tooltip-bg: #2c3b49; /* Deep slate gray for tooltip */
+            --tooltip-text: #d3d7f1; /* Soft lavender for tooltip text */
+            --tooltip-hover-bg: rgba(189, 129, 255, 0.4); /* Ethereal violet hover effect */
+        }
+
+        /* Styling for the page background and font */
+        body {
+            font-family: "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Center align the container and text */
+        .poetry-container {
+            max-width: 600px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: var(--heading-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: lowercase; /* Title in lowercase */
+        }
+
+        .poem {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        /* Styling for individual stanzas */
+        .stanza {
+            margin: 1.5em 0;
+        }
+
+        /* Tooltip container */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            background: var(--tooltip-hover-bg);
+            background-size: 200% 100%;
+            background-position: 100% 0;
+            transition: background-position 0.3s ease; /* Smooth transition */
+            color: inherit; /* Ensure text color matches context */
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden; /* Hidden by default */
+            width: 150px; /* Set a width for the tooltip */
+            background-color: var(--tooltip-bg); /* Tooltip background */
+            color: var(--tooltip-text); /* Tooltip text */
+            text-align: center;
+            padding: 5px 0; /* Padding inside the tooltip */
+            border-radius: 6px; /* Rounded corners */
+
+            /* Positioning the tooltip */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position above the tooltip container */
+            left: 50%; /* Center the tooltip */
+            margin-left: -75px; /* Adjust left margin to center */
+
+            /* Fade-in effect */
+            opacity: 0; 
+            transition: opacity 0.3s;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible; /* Show on hover */
+            opacity: 1; /* Fade in effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="poetry-container">
+        <h1>graviton</h1>
+        <div class="poem">
+            <p class="stanza">
+                if I can predict I <br>
+                can move right <br>
+                through a body completely <br>
+                undetected I find myself <br>
+                multiplied <br>
+            </p>
+            <p class="stanza">
+                I am this <br>
+                body and itself <br>
+                in the world faint <br>
+                in force <br>
+            </p>
+            <p class="stanza">
+                stratified <br> 
+            </p>
+            <p class="stanza">
+                does a body <br>
+                not end past <br>
+                its boundary <br>
+                I gather <br>
+                my skirts and feel <br>
+                myself growing <br>
+                lighter <br>
+            </p>
+            <p class="stanza">
+                this is the first <br>
+                law of thermodynamics <br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

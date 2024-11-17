@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22:14</title>
+    <style>
+
+        /* Import Noto Sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+        /* Basic reset for margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Root colors for the ocean dusk variation */
+:root {
+    --bg-color: #1b2a3d; /* Deep, dark ocean blue for a mysterious atmosphere */
+    --text-color: #b8d8d9; /* Soft pale blue for readability, evoking a quiet, somber mood */
+    --link-color: #5b9d9f; /* Subtle teal for interactive elements, suggesting a calming energy */
+    --link-hover-color: #9aabff; /* Soft lavender-blue for hover effects, adding a hint of surrealism */
+    --heading-gradient: linear-gradient(to right, #5b9d9f, #b8d8d9, #81c1a0); /* Teal to pale blue to light mint, reflecting the calmness of dusk */
+    --tooltip-bg: #3c3e3b; /* Dark charcoal for tooltip, evoking quiet, lingering shadow */
+    --tooltip-text: #e0f7f1; /* Light cyan for tooltip text, suggesting coolness and clarity */
+    --tooltip-hover-bg: rgba(145, 196, 168, 0.4); /* Subtle mint effect on hover, symbolizing fleeting moments */
+}
+
+
+        /* Styling for the page background and font */
+        body {
+            font-family: "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Center align the container and text */
+        .poetry-container {
+			width: 30%;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: var(--heading-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: lowercase; /* Title in lowercase */
+        }
+
+        .poem {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        /* Styling for individual stanzas */
+.stanza {
+    margin: 1.5em 0;
+}
+
+/* Prevent line breaks before <br> by setting nowrap on the span elements */
+.stanza span {
+    white-space: nowrap; /* Ensures no line breaks until <br> */
+}
+        /* Tooltip container */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            background: var(--tooltip-hover-bg);
+            background-size: 200% 100%;
+            background-position: 100% 0;
+            transition: background-position 0.3s ease; /* Smooth transition */
+            color: inherit; /* Ensure text color matches context */
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden; /* Hidden by default */
+            width: 150px; /* Set a width for the tooltip */
+            background-color: var(--tooltip-bg); /* Tooltip background */
+            color: var(--tooltip-text); /* Tooltip text */
+            text-align: center;
+            padding: 5px 0; /* Padding inside the tooltip */
+            border-radius: 6px; /* Rounded corners */
+
+            /* Positioning the tooltip */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position above the tooltip container */
+            left: 50%; /* Center the tooltip */
+            margin-left: -75px; /* Adjust left margin to center */
+
+            /* Fade-in effect */
+            opacity: 0; 
+            transition: opacity 0.3s;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible; /* Show on hover */
+            opacity: 1; /* Fade in effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="poetry-container">
+		<h1>22:14</h1>
+        <div class="stanza">
+            <span>I fit into</span><br>
+            <span style="padding-left:40%;">my jaw</span><br>
+            <span style="padding-right:40%;">a trunk</span><br>
+            <span style="padding-right:20%;">of an arm</span><br>
+            <span style="padding-left:70%;">hanging</span><br>
+            <span>over a perfumed</span><br>
+            <span style="padding-right:70%;">horizon</span><br>
+            <span>emerging from</span><br>
+            <span style="padding-left:90%;">a static</span><br>
+            <span>image</span><br>
+            <span style="padding-left:72%;">broadcast every</span><br>
+            <span style="padding-left:88%;">22:15 Thursday</span><br>
+            <span style="padding-right:80%;">the side</span><br>
+            <span style="padding-right:97%;">table plastic-covered</span><br>
+            <span style="padding-left:80%;">that unsoaks</span><br>
+            <span style="padding-right:20%;">a flood</span><br>
+            <span>of noise</span><br>
+		</div>
+		<div class="stanza">
+            <span>You</span><br>
+            <span>can hear</span><br>
+        </div>
+    </div>
+</body>
+</html>

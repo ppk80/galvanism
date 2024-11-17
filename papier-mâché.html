@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papier-Mâché</title>
+    <style>
+
+        /* Import Noto Sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+        /* Basic reset for margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Root colors for the papered twilight variation */
+        :root {
+            --bg-color: #1e1c1b; /* Darker, slightly cooler stormy gray */
+            --text-color: #e8d5b9; /* Warm parchment-like color for readability */
+            --link-color: #d1a8f0; /* Soft lavender for interactive elements */
+            --link-hover-color: #f7a1a1; /* Pale rose for hover effects */
+            --heading-gradient: linear-gradient(to right, #e8d5b9, #ff9c8c, #f7a1a1); /* Soft beige to coral to rose gradient */
+            --tooltip-bg: #46372a; /* Earthy brown for tooltip */
+            --tooltip-text: #f9f3e0; /* Light parchment color for tooltip text */
+            --tooltip-hover-bg: rgba(255, 164, 132, 0.4); /* Soft coral effect on hover */
+        }
+
+        /* Styling for the page background and font */
+        body {
+            font-family: "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Center align the container and text */
+        .poetry-container {
+            max-width: 600px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: var(--heading-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .poem {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        /* Styling for individual stanzas */
+        .stanza {
+            margin: 1.5em 0;
+        }
+
+        /* Tooltip container */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            background: var(--tooltip-hover-bg);
+            background-size: 200% 100%;
+            background-position: 100% 0;
+            transition: background-position 0.3s ease; /* Smooth transition */
+            color: inherit; /* Ensure text color matches context */
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden; /* Hidden by default */
+            width: 150px; /* Set a width for the tooltip */
+            background-color: var(--tooltip-bg); /* Tooltip background */
+            color: var(--tooltip-text); /* Tooltip text */
+            text-align: center;
+            padding: 5px 0; /* Padding inside the tooltip */
+            border-radius: 6px; /* Rounded corners */
+
+            /* Positioning the tooltip */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position above the tooltip container */
+            left: 50%; /* Center the tooltip */
+            margin-left: -75px; /* Adjust left margin to center */
+
+            /* Fade-in effect */
+            opacity: 0; 
+            transition: opacity 0.3s;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible; /* Show on hover */
+            opacity: 1; /* Fade in effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="poetry-container">
+        <h1>papier-mâché</h1>
+        <div class="poem">
+            <p class="stanza">
+                I found a wasps’ nest shaped <br>
+                like a habilis skull. <br>
+                I believe they built <br>
+                their petioles on a mask <br>
+                but this I cannot verify <br>
+                until they are done wearing it. <br>
+            </p>
+            <p class="stanza">
+                In the days to come <br>
+                with fibers, they will construct, <br>
+                and with bone, skin, <br>
+                the rest of it. <br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

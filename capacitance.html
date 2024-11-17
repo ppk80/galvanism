@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capacitance</title>
+    <style>
+
+        /* Import Noto Sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+        /* Basic reset for margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Root colors for the earthy, stormy variation */
+:root {
+    --bg-color: #1d3b3b; /* Deep teal with hints of blue for a moody atmosphere */
+    --text-color: #f8e1d4; /* Soft peachy beige for a warm, inviting feel */
+    --link-color: #f2a5a2; /* Warm coral for interactive elements */
+    --link-hover-color: #ff8a65; /* Lively orange-pink for hover effects */
+    --heading-gradient: linear-gradient(to right, #004c3f, #90b8c2, #1c4b43); /* Rich teal to pale blue to dark forest green gradient */
+    --tooltip-bg: #375e5d; /* Muted dark teal for tooltip background */
+    --tooltip-text: #f8e1d4; /* Soft peachy beige for tooltip text */
+    --tooltip-hover-bg: rgba(242, 165, 162, 0.4); /* Coral hover effect for tooltip */
+}
+
+
+        /* Styling for the page background and font */
+        body {
+            font-family: "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Center align the container and text */
+        .poetry-container {
+            max-width: 600px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: var(--heading-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: lowercase; /* Title in lowercase */
+        }
+
+        .poem {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        /* Styling for individual stanzas */
+        .stanza {
+            margin: 1.5em 0;
+        }
+
+        /* Tooltip container */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            background: var(--tooltip-hover-bg);
+            background-size: 200% 100%;
+            background-position: 100% 0;
+            transition: background-position 0.3s ease; /* Smooth transition */
+            color: inherit; /* Ensure text color matches context */
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden; /* Hidden by default */
+            width: 150px; /* Set a width for the tooltip */
+            background-color: var(--tooltip-bg); /* Tooltip background */
+            color: var(--tooltip-text); /* Tooltip text */
+            text-align: center;
+            padding: 5px 0; /* Padding inside the tooltip */
+            border-radius: 6px; /* Rounded corners */
+
+            /* Positioning the tooltip */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position above the tooltip container */
+            left: 50%; /* Center the tooltip */
+            margin-left: -75px; /* Adjust left margin to center */
+
+            /* Fade-in effect */
+            opacity: 0; 
+            transition: opacity 0.3s;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible; /* Show on hover */
+            opacity: 1; /* Fade in effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="poetry-container">
+        <h1>capacitance</h1>
+        <div class="poem">
+            <p class="stanza">
+                To be stretched <br>
+                flat into a sheet <br>
+                so thin that I can think <br>
+                with confidence <br>
+                “this is where <br>
+                it all converges.” <br>
+            </p>
+            <p class="stanza">
+                To audit the sky <br>
+                with all my breath <br>
+                gone; I want it <br>
+            </p>
+            <p class="stanza">
+                to know that I am <br>
+                its surveillance: <br>
+                watching <br>
+                without colliding <br>
+                all of it <br>
+                in the gap <br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

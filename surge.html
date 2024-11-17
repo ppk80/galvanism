@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Surge</title>
+    <style>
+
+        /* Import Noto Sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+        /* Basic reset for margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Root colors for the electric jungle dark mode variation */
+        :root {
+            --bg-color: #0f121e; /* Darker, more moody storm */
+            --text-color: #fffae3; /* Soft neon off-white for calm readability */
+            --link-color: #66f3ff; /* Cool cyan for interactive elements */
+            --link-hover-color: #ff80d3; /* Light pink for hover effects */
+            --heading-gradient: linear-gradient(to right, #ff66cc, #00ff88, #ff4500); /* Soft pink to neon green to fiery orange gradient */
+            --tooltip-bg: #3b2f25; /* Deep earthy brown for tooltip */
+            --tooltip-text: #ffebcd; /* Light creamy color for tooltip text */
+            --tooltip-hover-bg: rgba(106, 191, 110, 0.3); /* Neon green effect on hover */
+        }
+
+        /* Styling for the page background and font */
+        body {
+            font-family: "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Center align the container and text */
+        .poetry-container {
+            max-width: 600px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: var(--heading-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .poem {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        /* Styling for individual stanzas */
+        .stanza {
+            margin: 1.5em 0;
+        }
+
+        /* Tooltip container */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            background: var(--tooltip-hover-bg);
+            background-size: 200% 100%;
+            background-position: 100% 0;
+            transition: background-position 0.3s ease; /* Smooth transition */
+            color: inherit; /* Ensure text color matches context */
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden; /* Hidden by default */
+            width: 150px; /* Set a width for the tooltip */
+            background-color: var(--tooltip-bg); /* Tooltip background */
+            color: var(--tooltip-text); /* Tooltip text */
+            text-align: center;
+            padding: 5px 0; /* Padding inside the tooltip */
+            border-radius: 6px; /* Rounded corners */
+
+            /* Positioning the tooltip */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position above the tooltip container */
+            left: 50%; /* Center the tooltip */
+            margin-left: -75px; /* Adjust left margin to center */
+
+            /* Fade-in effect */
+            opacity: 0; 
+            transition: opacity 0.3s;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible; /* Show on hover */
+            opacity: 1; /* Fade in effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="poetry-container">
+        <h1>surge</h1>
+        <div class="poem">
+            <p class="stanza">
+                these days <br>
+                from the city <br>
+                sometimes, a power <br>
+                surge reaches <br>
+                all the way <br>
+                through into <br>
+                my joints and I <br>
+                am compelled <br>
+                to count the steps <br>
+                that I do not take <br>
+                but are taken for <br>
+                me by my toes, <br>
+                centimeters closer <br>
+                and closer outside <br>
+                until I can see <br>
+                myself from a vantage <br>
+                on a meaningless <br>
+                hill surrounded by trees <br>
+                surrounded by mountains <br>
+                where the warm <br>
+                fronts collide <br>
+                into the gossiping <br>
+                rocks and frogs <br>
+                and slide upwards <br>
+                to become anvil clouds <br>
+                the taste <br>
+                is sour, or metallic <br>
+                or bitter, like things <br>
+                that are overvoltage <br>
+                I cannot hold. <br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
