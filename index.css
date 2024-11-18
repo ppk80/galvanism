@@ -7,9 +7,11 @@
     --text-color: #d2ffd9; /* Neon green, like glowing leaves */
     --link-color: #f5d98c; /* Vibrant yellow for links */
     --link-hover-color: #7df9ff; /* Hot pink for hover effect */
-    --heading-color-start: #a1f21f; /* Neon green */
-    --heading-color-middle: #7df9ff; /* Cyan */
-    --heading-color-end: #ff77e9; /* Hot pink */
+--heading-color-start: #ff7300; /* Electric orange */
+--heading-color-middle: #b7ff00; /* Bright yellow */
+--heading-color-end: #00ffea; /* Aqua teal */
+
+
     --item-bg-hover: #14321a; /* Dark jungle green with subtle neon vibe */
     --item-glow: rgba(255, 119, 233, 0.4); /* Pink glow for hover effect */
 }
