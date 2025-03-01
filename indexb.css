@@ -57,6 +57,14 @@
         text-align: center;
         line-height: 1.6;
       }
+div .poem {
+    display: inline-block; /* Makes it only as wide as its content */
+}
+
+.invitro .sidenote{
+	 text-align:center;
+	 
+}
 
 div .title {
     font-family: "Syne Mono", monospace;
