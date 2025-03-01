@@ -1,5 +1,7 @@
 /* Import Syne Mono font */
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
 :root {
     --bg-color: #0d0f1e; /* Deep stormy night */
@@ -70,9 +72,12 @@ div .title {
   position: absolute;
   display: inline;
 }
+
+
+
         h1 {
-			font-family: "Averia Sans Libre";
-            font-size: 1.5em;
+			font-family: "Italiana";
+            font-size: 1.7em;
         }
 
       .piece {
