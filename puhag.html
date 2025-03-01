@@ -292,7 +292,7 @@ kuryente. sumisipol <br>
 
 
  		<div class="poem" style="text-align:left; max-width:700px; margin-right: auto; margin-left: auto;">
-				<h1 style="display:none">walking home</h1>
+				<h1>walking home</h1>
             <div class="stanza">
                 Constant buzzing, lines entangling into each other forming a canopy forming a clearing for a magenta sky. A transmission tower blinking, overlooking. I need to get there at a certain time. What time is it? I seem to have misplaced my watch. I dislike the way they hug my wrists. Like a fever at night. I can almost feel my skin prickling, like as a hand or a foot has fallen asleep or has started to wake up, or a subtler version of static from rubbing balloons. A page of newspaper from last year: 20 sugatan sa bomba. My grandmother has lost feeling on one side of her body. Can’t afford to get her looked at in another timeline where we can the doctors ran several tests and cannot say what it is. The rustling of garbage bags at this hour the sound of six thousand people kneeling. My silhouette looking like a walking turtle because of my backpack. I have somewhere I need to get to. Turning the corner, the transmission tower almost leaning, the same size it was. The sound of wasps. 
             </div>
@@ -446,9 +446,14 @@ the current. Lo-bat? Gutom lang yan! <br>
       </div>
     </div>
     <script>
-        function toggleMenu() {
+        function toggleMenu(event) {
+            if (event) {
+                event.preventDefault(); // Prevent default anchor behavior
+            }
             let sidebar = document.getElementById("sidebar");
             let poetryContainer = document.querySelector(".poetry-container");
+            let scrollPosition = window.scrollY; // Save current scroll position
+
             if (sidebar.style.width === "250px") {
                 sidebar.style.width = "0";
                 poetryContainer.style.marginLeft = "0";
@@ -456,6 +461,10 @@ the current. Lo-bat? Gutom lang yan! <br>
                 sidebar.style.width = "250px";
                 poetryContainer.style.marginLeft = "250px";
             }
+
+            setTimeout(() => {
+                window.scrollTo(0, scrollPosition); // Restore scroll position after transition
+            }, 310); // Slight delay to align with transition timing
         }
         
         function generateMenu() {
