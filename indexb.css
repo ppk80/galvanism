@@ -76,10 +76,9 @@ div .title {
       }
 
       /* Divider image styling */
-      .divider img {
-        width: 400px;
-        /* Adjust width as needed */
-        margin: 20px 0;
+      .divider {
+
+        margin: 20px 0 20px 0;
       }
 
       /* Tooltip container */
