@@ -1,0 +1,204 @@
+/* Import Syne Mono font */
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+:root {
+    --bg-color: #0d0f1e; /* Deep stormy night */
+    --text-color: #d2ffd9; /* Neon green, like glowing leaves */
+    --link-color: #f5d98c; /* Vibrant yellow for links */
+    --link-hover-color: #7df9ff; /* Hot pink for hover effect */
+--heading-color-start: #ff7300; /* Electric orange */
+--heading-color-middle: #b7ff00; /* Bright yellow */
+--heading-color-end: #00ffea; /* Aqua teal */
+
+
+    --item-bg-hover: #14321a; /* Dark jungle green with subtle neon vibe */
+    --item-glow: rgba(255, 119, 233, 0.4); /* Pink glow for hover effect */
+}
+      /* Basic reset for margin and padding */
+      body,
+      h1,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Styling for the page background and font */
+      body {
+        font-family: "Exo 2", sans-serif;
+        background-color: #1e293b;
+        /* Dark slate background */
+        color: #e2e8f0;
+        /* Light text for contrast */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      /* Center align the container and text */
+      .poetry-container {
+		padding-top: 30px;
+        text-align: center;
+        line-height: 1.6;
+      }
+
+div .title {
+    font-family: "Syne Mono", monospace;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, var(--heading-color-start), var(--heading-color-middle), var(--heading-color-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+
+.sidenote {
+  position: absolute;
+  display: inline;
+}
+        h2 {
+			font-family: "Averia Sans Libre";
+            font-size: 1.5em;
+            color: #9ac2c5; /* Muted cyan for secondary headings */
+        }
+
+      .piece {
+        font-size: 1.2em;
+        margin-bottom: 40px;
+      }
+
+      .pretitle {
+      }
+
+      /* Styling for individual stanzas */
+      .stanza {
+        margin: 30px 0;
+      }
+
+      /* Divider image styling */
+      .divider img {
+        width: 400px;
+        /* Adjust width as needed */
+        margin: 20px 0;
+      }
+
+      /* Tooltip container */
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        background: linear-gradient(to top, rgba(36, 105, 162, 0.3) 0%, transparent 10%);
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        transition: background-position 0.3s ease;
+        /* Smooth transition */
+        color: inherit;
+        /* Ensure text color matches context */
+      }
+
+      /* Tooltip text */
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        /* Hidden by default */
+        width: 120px;
+        /* Set a width for the tooltip */
+        background-color: #31614c;
+        /* Tooltip background color */
+        color: #ecd3ed;
+        /* Tooltip text color */
+        text-align: center;
+        padding: 5px 0;
+        /* Padding inside the tooltip */
+        border-radius: 6px;
+        /* Rounded corners */
+        /* Positioning the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        /* Position above the tooltip container */
+        left: 50%;
+        /* Center the tooltip */
+        margin-left: -60px;
+        /* Adjust left margin to center */
+        /* Fade-in effect */
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      /* Show the tooltip text when you mouse over the tooltip container */
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        /* Show on hover */
+        opacity: 1;
+        /* Fade in effect */
+      }
+	  
+	  a {
+    color: #c5a3ff; /* Soft lavender, reflective of a dreamy tone */
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold; /* Makes the link stand out */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    color: #ffd580; /* Warm amber for a glowing effect on hover */
+}
+
+        .sidebar {
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: linear-gradient(180deg, #2a004f, #57007a, #320066);
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.7);
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+        .sidebar a, .sidebar .close-btn {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #ffccff;
+            display: block;
+            transition: 0.2s;
+            text-align: left;
+        }
+        .sidebar a:hover, .sidebar .close-btn:hover {
+            background-color: rgba(255, 0, 255, 0.2);
+            color: #ff66ff;
+        }
+        .menu-button {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            font-size: 24px;
+            background-color: #7700aa;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+		
+		/* Styling for indented lines in stanzas */
+.indent-1 {
+    padding-left: 10%;
+}
+
+.indent-2 {
+    padding-left: 20%;
+}
+
+.indent-3 {
+    padding-left: 30%;
+}
+
+.indent-4 {
+    padding-left: 40%;
+}
+
+.indent-5 {
+    padding-left: 50%;
+}
