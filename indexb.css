@@ -67,7 +67,7 @@ div .poem {
 }
 
 div .title {
-    font-family: "Syne Mono", monospace;
+    font-family: "Averia Libre", monospace;
     font-size: 3rem;
     margin-bottom: 1.5rem;
     background: linear-gradient(to right, var(--heading-color-start), var(--heading-color-middle), var(--heading-color-end));
@@ -84,7 +84,7 @@ div .title {
 
 
         h1 {
-			font-family: "Italiana";
+			font-family: "Averia Libre";
             font-size: 1.7em;
         }
 

@@ -1,6 +1,6 @@
 /* Import Syne Mono font */
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap');
 /* Root colors for the cyberpunk jungle thunderstorm */
 :root {
     --bg-color: #0d0f1e; /* Deep stormy night */
@@ -19,7 +19,7 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: "Syne Mono", monospace;
+    font-family: "Averia Libre";
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-    font-family: "Syne Mono", monospace;
+    font-family: "Averia Libre";
     font-size: 3rem;
     margin-bottom: 1.5rem;
     background: linear-gradient(to right, var(--heading-color-start), var(--heading-color-middle), var(--heading-color-end));
@@ -64,7 +64,7 @@ p {
 
 /* Styling for main title links */
 .text a.title-link {
-    font-family: "Syne Mono", monospace;
+    font-family: "Averia Libre", monospace;
     text-decoration: none;
     color: var(--link-color); /* Vibrant yellow */
     font-size: 1.3rem;
